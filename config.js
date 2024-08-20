@@ -28,8 +28,16 @@ const Config = {
         numFeaturesToShow: 2,
         infoText: "(weitere Objekte. Bitte zoomen.)",
     },
-    addons: ["simulationTool"],
+    addons: ["simulationTool", "login"],
     simulationApiUrl: "http://localhost/api",
+    login: {
+        oidcAuthorizationEndpoint: "http://localhost/auth/realms/masterportal/protocol/openid-connect/auth",
+        oidcTokenEndpoint: "http://localhost/auth/realms/masterportal/protocol/openid-connect/token",
+        oidcClientId: "cut",
+        oidcRedirectUri: "http://localhost/portal/simulation/",
+        oidcScope: "openid",
+        interceptorUrlRegex: "https?://localhost.*" // add authorization to all URLs that match the given regex
+    }
 };
 
 // conditional export to make config readable by e2e tests
