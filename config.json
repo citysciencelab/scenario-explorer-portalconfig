@@ -1,0 +1,152 @@
+{
+    "portalConfig": {
+        "map": {
+            "layerPills": {
+                "active": true
+            },
+            "mouseHover": {
+                "numFeaturesToShow": 2,
+                "infoText": "(weitere Objekte. Bitte zoomen.)"
+            },
+            "mapView": {
+                "backgroundImage": "./resources/img/backgroundCanvas.jpeg",
+                "startCenter": [
+                    561210,
+                    5932600
+                ],
+                "extent": [
+                    510000,
+                    5850000,
+                    625000.4,
+                    6000000
+                ],
+                "startZoomLevel": 1
+            },
+            "controls": {
+                "zoom": true,
+                "orientation": {
+                    "zoomMode": "once"
+                },
+                "expandable": {}
+            },
+            "getFeatureInfo": {}
+        },
+        "portalFooter": {
+            "urls": [
+                {
+                    "bezeichnung": "common:modules.portalFooter.designation",
+                    "url": "https://geoinfo.hamburg.de/",
+                    "alias": "Landesbetrieb Geoinformation und Vermessung",
+                    "alias_mobil": "LGV"
+                }
+            ],
+            "scaleLine": true
+        },
+        "tree": {
+            "addLayerButton": {
+                "active": true
+            }
+        },
+        "mainMenu": {
+            "expanded": true,
+            "sections": [
+                [
+                    {
+                        "name": "Legende",
+                        "type": "legend"
+                    },
+                    {
+                        "type": "shareView"
+                    }
+                ],
+                [
+                    {
+                        "type": "news"
+                    },
+                    {
+                        "icon": "bi-question-circle",
+                        "type": "folder",
+                        "name": "Informationen",
+                        "elements": [
+                            {
+                                "type": "customMenuElement",
+                                "icon": "bi-link",
+                                "name": "Masterportal",
+                                "openURL": "https://masterportal.org"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "about",
+                        "cswUrl": "https://metaver.de/csw",
+                        "metaUrl": "to be filled",
+                        "metaId": "to be filled"
+                    }
+                ]
+            ],
+            "title": {
+                "text": "CUT Simulation - Portal",
+                "logo": "",
+                "link": "",
+                "toolTip": "toolTip"
+            },
+            "searchBar": {
+                "searchInterfaces": [
+                    {
+                        "serviceId": "11",
+                        "limit": 20,
+                        "lang": "de",
+                        "lat": 53.6,
+                        "lon": 10,
+                        "bbox": "9.6,53.3,10.4,53.8",
+                        "type": "komootPhoton"
+                    },
+                    {
+                        "type": "visibleVector"
+                    },
+                    {
+                        "type": "topicTree"
+                    }
+                ],
+                "placeholder": "Suche nach: - Adresse - Aktiven WFS"
+            }
+        },
+        "secondaryMenu": {
+            "expanded": false,
+            "sections": [
+                [
+                    {
+                        "name": "additional:modules.tools.simulationTool.title",
+                        "icon": "bi-sliders2",
+                        "type": "simulationTool"
+                    }
+                ]
+            ]
+        }
+    },
+    "layerConfig": {
+        "baselayer": {
+            "elements": [
+                {
+                    "id": "453",
+                    "visibility": true
+                }
+            ]
+        },
+        "subjectlayer": {
+            "elements": [
+                {
+                    "id": "123456",
+                    "styleId": "654321",
+                    "visibility": true
+                },
+                {
+                    "id": "1234567",
+                    "name": "SEIR Infection Model",
+                    "styleId": "7654321",
+                    "visibility": true
+                }
+            ]
+        }
+    }
+}
