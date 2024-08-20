@@ -52,6 +52,10 @@
             "sections": [
                 [
                     {
+                      "name": "CUT Simluation",
+                      "type": "simulationTool"
+                    },
+                    {
                         "name": "Legende",
                         "type": "legend"
                     },

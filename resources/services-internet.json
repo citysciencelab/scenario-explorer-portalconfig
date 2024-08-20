@@ -96,6 +96,21 @@
     "mouseHoverField": [
       "stadtteil"
     ]
+  },
+  {
+    "id": "1337",
+    "isSimulationLayer": true,
+    "filterOnClient": true,
+    "simModelId": "modelserver:hello-world",
+    "styleId": "7654321",
+    "name": "Hello World Fake layer",
+    "url": "http://localhost/geoserver/CUT/ows",
+    "featureType": "",
+    "version": "1.0.0",
+    "typ" : "WebGL",
+    "isPointLayer": false,
+    "isVisibleInMap": true,
+    "legend": false,
+    "mouseHoverField": []
   }
 ]
-
