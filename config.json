@@ -52,8 +52,6 @@
             "sections": [
                 [
                     {
-                        "name": "translate#additional:modules.tools.login.title",
-                        "icon": "bi-door-open",
                         "type": "login"
                     },
                     {

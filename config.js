@@ -31,9 +31,9 @@ const Config = {
     addons: ["simulationTool", "login"],
     simulationApiUrl: "http://localhost/api",
     login: {
-        oidcAuthorizationEndpoint: "http://localhost/auth/realms/masterportal/protocol/openid-connect/auth",
-        oidcTokenEndpoint: "http://localhost/auth/realms/masterportal/protocol/openid-connect/token",
-        oidcClientId: "cut",
+        oidcAuthorizationEndpoint: "http://localhost/auth/realms/UrbanModelPlatform/protocol/openid-connect/auth",
+        oidcTokenEndpoint: "http://localhost/auth/realms/UrbanModelPlatform/protocol/openid-connect/token",
+        oidcClientId: "ump-client",
         oidcRedirectUri: "http://localhost/portal/simulation/",
         oidcScope: "openid",
         interceptorUrlRegex: "https?://localhost.*" // add authorization to all URLs that match the given regex
