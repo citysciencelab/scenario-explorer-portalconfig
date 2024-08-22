@@ -28,7 +28,7 @@ const Config = {
         numFeaturesToShow: 2,
         infoText: "(weitere Objekte. Bitte zoomen.)",
     },
-    addons: ["simulationTool", "login"],
+    addons: ["simulationTool"],
     simulationApiUrl: "http://localhost/api",
     login: {
         oidcAuthorizationEndpoint: "http://localhost/auth/realms/UrbanModelPlatform/protocol/openid-connect/auth",
