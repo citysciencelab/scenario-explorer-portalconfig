@@ -101,7 +101,7 @@
     "id": "1337",
     "isSimulationLayer": true,
     "filterOnClient": true,
-    "simModelId": "modelserver:hello-world",
+    "simModelId": "*",
     "styleId": "7654321",
     "name": "Hello World Fake layer",
     "url": "http://localhost/geoserver/CUT/ows",
