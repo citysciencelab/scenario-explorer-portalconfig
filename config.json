@@ -137,19 +137,7 @@
             ]
         },
         "subjectlayer": {
-            "elements": [
-                {
-                    "id": "123456",
-                    "styleId": "654321",
-                    "visibility": true
-                },
-                {
-                    "id": "1234567",
-                    "name": "SEIR Infection Model",
-                    "styleId": "7654321",
-                    "visibility": true
-                }
-            ]
+            "elements": []
         }
     }
 }
