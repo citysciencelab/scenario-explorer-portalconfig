@@ -1,5 +1,4 @@
 const Config = {
-    wfsImgPath: "./resources/img/",
     namedProjections: [
         [
             "EPSG:25832",
@@ -20,19 +19,31 @@ const Config = {
     quickHelp: {
         imgPath: "./resources/img/",
     },
-    layerConf: "./resources/services-internet.json",
-    restConf: "./resources/rest-services-internet.json",
-    styleConf: "./resources/style_v3.json",
+    layerConf: "https://geodienste.hamburg.de/services-internet.json",
+    restConf: "https://geodienste.hamburg.de/lgv-config/rest-services-internet.json",
+    styleConf: "https://geodienste.hamburg.de/lgv-config/style_v3.json",
+    wfsImgPath: "https://geodienste.hamburg.de/lgv-config/img/",
+    cesiumLibrary: "https://geoportal-hamburg.de/mastercode/cesium/latest/Cesium.js",
     scaleLine: true,
     mouseHover: {
         numFeaturesToShow: 2,
         infoText: "(weitere Objekte. Bitte zoomen.)",
     },
+    portalLanguage: {
+        enabled: true,
+        debug: false,
+        languages: {
+            de: "Deutsch",
+            en: "English",
+        },
+        fallbackLanguage: "de",
+        changeLanguageOnStartWhen: ["querystring", "localStorage", "htmlTag"]
+    },
     addons: ["simulationTool"],
-    simulationApiUrl: "http://localhost/api",
+    simulationApiUrl: "https://modelplatform.comodeling.city/api",
     login: {
-        oidcAuthorizationEndpoint: "http://localhost/auth/realms/UrbanModelPlatform/protocol/openid-connect/auth",
-        oidcTokenEndpoint: "http://localhost/auth/realms/UrbanModelPlatform/protocol/openid-connect/token",
+        oidcAuthorizationEndpoint: "https://auth.comodeling.city/realms/UrbanModelPlatform/protocol/openid-connect/auth",
+        oidcTokenEndpoint: "https://auth.comodeling.city/realms/UrbanModelPlatform/protocol/openid-connect/token",
         oidcClientId: "ump-client",
         oidcRedirectUri: "http://localhost/portal/simulation/",
         oidcScope: "openid",
